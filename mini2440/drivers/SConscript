@@ -1,0 +1,26 @@
+Import('RTT_ROOT')
+Import('rtconfig')
+from building import *
+
+cwd = GetCurrentDir()
+src = Glob('*.c')
+CPPPATH = [cwd, str(Dir('#'))]
+
+if GetDepend('RT_USING_LWIP') == False:
+	SrcRemove(src, 'dm9000.c')
+
+if GetDepend('RT_USING_DFS') == False:
+	SrcRemove(src, 'sdcard.c')
+
+if GetDepend('RT_USING_RTGUI') == False:
+	SrcRemove(src, 'calibration.c')
+	SrcRemove(src, 'key.c')
+	SrcRemove(src, 'touch.c')
+	SrcRemove(src, 'lcd_a70.c')
+	SrcRemove(src, 'lcd_n35.c')
+	SrcRemove(src, 'lcd_t35.c')
+	SrcRemove(src, 'lcd_x35.c')
+
+group = DefineGroup('Drivers', src, depend = [''], CPPPATH = CPPPATH)
+
+Return('group')
