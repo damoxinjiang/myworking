@@ -1,0 +1,25 @@
+Building the toolchain
+======================
+cd /usr/src
+./build.sh -u -m evbarm tools
+
+
+Building the kernel
+===================
+cd /usr/src
+./build.sh -u -m evbarm kernel=SMDK2410
+
+
+Building the userspace programs
+===============================
+./build.sh -u -m evbarm 
+
+Building the root filesystem
+============================
+
+Inserting the ramdisk image into the kernel
+===========================================
+arm--netbsdelf-mdsetimage -v -s netbsd rootfs_ramdisk.img
+
+URL:
+http://www.chinaunix.net/jh/5/801055.html
