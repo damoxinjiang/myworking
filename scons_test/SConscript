@@ -1,0 +1,4 @@
+Import('env')
+
+env.Library('tt', ['t1.c', 't2.c'])
+print 'end of library'
