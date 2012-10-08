@@ -23,3 +23,8 @@ arm--netbsdelf-mdsetimage -v -s netbsd rootfs_ramdisk.img
 
 URL:
 http://www.chinaunix.net/jh/5/801055.html
+http://bbs.chinaunix.net/thread-732622-1-1.html
+
+NetBSD 6.0 beta source files
+============================
+ftp://ftp.netbsd.org/pub/NetBSD/NetBSD-6.0_BETA2/source/sets/
