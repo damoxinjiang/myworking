@@ -3,3 +3,5 @@
 {"ts":1354758370507,"patch":[[{"diffs":[[0,"300 "],[-1,"<"],[1,": LPC"],[0,"4300"]],"start1":47,"start2":47,"length1":9,"length2":13},{"diffs":[[0,"0分支去"],[-1,">"],[0,"\n\n##"]],"start1":92,"start2":92,"length1":9,"length2":8}]],"length":802,"saved":false}
 {"ts":1354758378753,"patch":[[{"diffs":[[0,"C分支 ###\n"],[-1,"\n"],[0,"- 加入USB "]],"start1":121,"start2":121,"length1":17,"length2":16}]],"length":801,"saved":false}
 {"ts":1354758385286,"patch":[[{"diffs":[[0,"ell ###\n"],[1,"- "],[0,"加入类Linux"]],"start1":175,"start2":175,"length1":16,"length2":18},{"diffs":[[0,"件系统 ###\n"],[1,"- "],[0,"支持文件系统级别"]],"start1":226,"start2":226,"length1":16,"length2":18},{"diffs":[[0,"ack ###\n"],[1,"- "],[0,"使能IPv6协议"]],"start1":274,"start2":274,"length1":16,"length2":18}]],"length":807,"saved":false}
+{"ts":1354758440410,"patch":[[{"diffs":[[0,"能IPv6协议栈"],[1,"\n- 把BSD socket加入到文件系统的文件描述符管理中；"],[0,"\n\n### RT"]],"start1":285,"start2":285,"length1":16,"length2":47}]],"length":838,"saved":false}
+{"ts":1354758447624,"patch":[[{"diffs":[[0,"支持分支 ##\n"],[-1,"\n"],[0,"- LPC430"]],"start1":32,"start2":32,"length1":17,"length2":16}]],"length":837,"saved":false}
