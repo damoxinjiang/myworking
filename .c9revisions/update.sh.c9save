@@ -1,2 +1,0 @@
-{"ts":1354758595711,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":false,"ts":1354758629353,"patch":[[{"diffs":[[1,"# !/bin/sh\n\ngit add .\ngit commit -m \"update documents\"\ngit push origin master\n"]],"start1":0,"start2":0,"length1":0,"length2":78}]],"length":78,"saved":false}
