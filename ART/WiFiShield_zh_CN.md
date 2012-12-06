@@ -3,7 +3,11 @@
 ## 1. 使用前的准备 ##
 在使用ART + WiFi shield前，请预先获得ART板及WiFi shield（shield意为盾，即可以插在ART上的扩展板）。
 
-同时也需要一张TF卡，把ART_work-0093\hardware\firmware目录完整复制到TF卡根目录，这步可以在Windows下进行。
+![WiFi shield](http://github.com/BernardXiong/myworking/raw/master/ART/WiFi_shield.png)
+
+同时也需要一张TF卡，把ART_work-0093\hardware\firmware目录完整复制到TF卡根目录，这步可以在Windows下进行，最终复制完毕，会在TF卡根目录出现一个firmware目录，如图所示。
+
+![firmware](http://github.com/BernardXiong/myworking/raw/master/ART/WiFi_firmware.png)
 
 使用时先保证ART中已经烧写了支持WiFi shield的固件：rtthread_wifi.bin，可以使用如下步骤下载新的固件：
 
@@ -11,7 +15,9 @@
 2. 按下ART的DFU按钮，然后是Reset按钮，松开Reset按钮，松开DFU按钮，让ART板进入DFU模式
 3. 在ART_work软件中选择Burn Firmware烧写固件
 
-如果烧写成功，会在ART_work的提示信息中显示下载固件成功。
+如果烧写成功，会在ART_work的提示信息中显示下载固件成功，如下图所示：
+
+![ART_work download](http://github.com/BernardXiong/myworking/raw/master/ART/ART_workdl.png)
 
 ## 2. 使用WiFi shield ##
 当使用ART+WiFi shield时，有两种烧写模式，一种是类似原来的方式把Arduino应用程序烧写到芯片ROM中，一种则是通过WiFi无线网络把Arduino应用程序推送给ART板。这两种方式在ART_work软件界面上都是点工具栏的下载按钮，所以这两种的区别在于当前使用了哪种板子：

@@ -13,7 +13,7 @@
 - 基本的内核
 - 基本的命令行
 - 如果使用USB连接电脑，可以使用USB串口
-- 如果使用真实串口，可以使用ttl线连接rx0, tx0
+- 如果使用真实串口，可以使用ttl线连接RX0, TX0
 
 这里推荐使用USB线直接连接方式（但使用USB方式会忽略启动时信息；在系统当机时也不能输出出错信息）。
 
@@ -21,6 +21,6 @@
 
 ART swd连接20 pin JTAG如下图所示:
 
-![SWD](./swd.png)
+![SWD](http://github.com/BernardXiong/myworking/raw/master/ART/swd.png)
 
 请注意下图中的20 pin JTAG缺口是朝上的。
