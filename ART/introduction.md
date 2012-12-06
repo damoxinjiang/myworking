@@ -2,7 +2,7 @@
 
 ART board是一块与[Arduino](http://arduino.cc)兼容的IO板，其中包含了一片ARM Cortex-M4的微控制处理器芯片。ART board由于RT-Thread社区主持开发，面向初学者，电子爱好者。ART board的目标是完全兼容Arduino软硬件环境，同时在上面能够运行相对复杂的程序（控制，音频，视频，网络），以及普及RT-Thread开源实时操作系统技术。
 
-![Board](./ART_board.png)
+![Board](http://github.com/BernardXiong/myworking/raw/master/ART/ART_board.png)
 
 ## 硬件介绍 ##
 
@@ -20,14 +20,14 @@ ART board是一块与[Arduino](http://arduino.cc)兼容的IO板，其中包含�
 
 硬件接口兼容Arduino Uno的接口，尺寸兼容Arduino MEGA板。可以使用Arduino Uno的IO扩展板，Arduino MEGA的IO扩展板。ART board包括了两个USB端口，这两个端口从物理上都能够做OTG设备以实现USB设备端和主机端功能，但为了区分，我们把它分别定义成USB设备端和USB主机端，并在固件软件上做相应的限定。USB设备端可以对ART board供电，同时支持PC端的在线编程（即一条USB线缆既可做电源供电，也可以烧写程序）。
 
-![ART](./ART_HW.png)
+![ART](http://github.com/BernardXiong/myworking/raw/master/ART/ART_HW.png)
 
 ## 软件介绍 ##
 
 ART board在PC上可使用GNU GCC工具链进行编程，同时有相对应的ART_work工具，在ART_work工具内提供了ART上的相应示例程序，对ART board编程的程序等。ART board可执行Arduino语法的程序，完全兼容Arduino语法形式，及部分Arduino外设库（兼容外设库情况在持续增长中）。
 
 ART_work软件主界面图
-![ART_work](./ART_work.png)
+![ART_work](http://github.com/BernardXiong/myworking/raw/master/ART/ART_work.png)
 
 ### 软件平台介绍 ###
 
@@ -42,4 +42,4 @@ ART board采用了开源的实时操作系统RT-Thread做为底层的平台，�
 - 每个程序可单独烧写部署。
 
 ART board上的软件结构图如下图所示。
-![ART_arch](./ART_arch.png)
+![ART_arch](http://github.com/BernardXiong/myworking/raw/master/ART/ART_arch.png)
