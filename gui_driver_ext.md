@@ -50,3 +50,9 @@ struct rtgui_graphic_ext_ops
 ```
 
 这样 ```rt_device_control``` 的方式，从图形驱动中获得扩展能力。如果图形驱动包含绘图扩展，则返回RT_EOK，并把struct rtgui_graphic_ext_ops结构体的指针返回给ext_ops。
+
+### 编写驱动 ###
+
+可按照rtgui_graphic_ext_ops结构体定义的域实现相应的操作，如果硬件并不支持某些操作，例如绘圆，可以把结构体中相应域置为RT_NULL。
+
+而实现的操作，则建议实现成作用于文件内的静态函数。
