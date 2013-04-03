@@ -22,7 +22,7 @@ struct json_tree
 ```
 
 其中 ```layer``` 和 ```node_stack``` 用于json分析时保存节点上下文。一个json树由
-root节点指出了，一个json节点的定义是：
+root节点指出了，一个json节点被定义成：
 
 ```c
 struct json_node
