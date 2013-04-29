@@ -13,7 +13,7 @@
 ~~~{.c}
 int function(int a, int b);
 ~~~
-* 意义
+* 说明
  * 函数就是函数。
 * 参数
  * a, 参数a指示出是balabala
