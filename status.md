@@ -10,8 +10,6 @@
 
 * 原型定义
 
-  int function(int a, int b);
-
 ~~~{.c}
 int function(int a, int b);
 ~~~
