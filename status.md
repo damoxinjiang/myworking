@@ -24,14 +24,14 @@ int function(int a, int b);
 * 例子
 
 ~~~{.c}
-void test(void)
-{
-  function(10, 100);
-}
+  void test(void)
+  {
+    function(10, 100);
+  }
 ~~~
 
 这个例子说明了某某用法，在第1行balabala，第2行balabala。最终的输出结果类似：
 
-~~~{.txt}
-balabala
-~~~
+  ~~~{.txt}
+  balabala
+  ~~~
