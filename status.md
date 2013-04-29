@@ -9,6 +9,7 @@
 ## API说明 ##
 
 * 原型定义
+
 ~~~{.c}
 int function(int a, int b);
 ~~~
@@ -20,3 +21,17 @@ int function(int a, int b);
 * 返回值
  * 返回0，代表；
  * 返回1，代表很好。
+* 例子
+
+~~~{.c}
+void test(void)
+{
+  function(10, 100);
+}
+~~~
+
+这个例子说明了某某用法，在第1行balabala，第2行balabala。最终的输出结果类似：
+
+~~~{.txt}
+balabala
+~~~
