@@ -1,11 +1,30 @@
-Î¬³ÖupstreamµÄ¸üĞÂ
-==================
-# Ìí¼ÓÔ¶¶Ë¼ÇÂ¼£¬Ìí¼ÓÒ»´Î¼´¿É
-git remote add upstream git://github.com/...
+# ç»´æŒupstreamçš„æ›´æ–°
 
-# »ñÈ¡upstream¸üĞÂ
-git fetch upstream
-# ºÏ²¢upstreamµ½µ±Ç°fork·ÖÖ§
-git merge upstream/origin
-# ÍÆµ½forkµÄÔ¶¶Ë
-git push origin master
+æ·»åŠ è¿œç«¯è®°å½•ï¼Œæ·»åŠ ä¸€æ¬¡å³å¯
+
+  git remote add upstream git://github.com/...
+
+è·å–upstreamæ›´æ–°
+
+  git fetch upstream
+
+åˆå¹¶upstreamåˆ°å½“å‰forkåˆ†æ”¯
+
+  git merge upstream/origin
+
+æ¨åˆ°forkçš„è¿œç«¯
+
+  git push origin master
+
+# æ·»åŠ githubä¸Šä¼ ä»¤ç‰Œ #
+
+  sudo apt-get install ruby
+  gem install travis
+
+ç”¨curlå‘½ä»¤è·å¾—githubä¸Šçš„token
+
+  curl -u "username" https://api.github.com
+
+ç”¨ç”Ÿæˆçš„tokenæ¥ç”Ÿæˆsecure
+
+  travis encrypt RT-Thread/rtthread-manual-doc GITHUB_TOKEN=
