@@ -2,29 +2,29 @@
 
 添加远端记录，添加一次即可
 
-  git remote add upstream git://github.com/...
+    git remote add upstream git://github.com/...
 
 获取upstream更新
 
-  git fetch upstream
+    git fetch upstream
 
 合并upstream到当前fork分支
 
-  git merge upstream/origin
+    git merge upstream/origin
 
 推到fork的远端
 
-  git push origin master
+    git push origin master
 
 # 添加github上传令牌 #
 
-  sudo apt-get install ruby
-  gem install travis
+    sudo apt-get install ruby
+    gem install travis
 
 用curl命令获得github上的token
 
-  curl -u "username" https://api.github.com
+    curl -u "username" https://api.github.com
 
 用生成的token来生成secure
 
-  travis encrypt RT-Thread/rtthread-manual-doc GITHUB_TOKEN=
+    travis encrypt RT-Thread/rtthread-manual-doc GITHUB_TOKEN=
