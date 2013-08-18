@@ -33,3 +33,7 @@
 
     git config --global http.sslVerify false
     
+# 配置用户名 #
+
+    git config --global user.name "Billy Everyteen"
+    git config --global user.email "me@here.com"
