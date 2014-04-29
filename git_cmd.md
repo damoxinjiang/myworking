@@ -37,3 +37,8 @@
 
     git config --global user.name "Billy Everyteen"
     git config --global user.email "me@here.com"
+
+# 创建远端的另外一个镜像 #
+
+    git remote add mirror https://...git
+    git push mirror master
