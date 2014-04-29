@@ -29,7 +29,7 @@
 
     travis encrypt RT-Thread/rtthread-manual-doc GITHUB_TOKEN=
 
-# 移除验证 #
+# 移除http SSL验证 #
 
     git config --global http.sslVerify false
     
