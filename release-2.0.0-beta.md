@@ -28,6 +28,7 @@ RT-Thread 2.0.0 beta
 * 移除STM32F107中的组件初始化配置；
 * 增强STM32F107 EMAC驱动性能，同时加入自动查找PHY芯片地址功能；
 * 重写xplorer4330（NXP LPC4330芯片）移植（xiaonong完成）；
+* 新增Zynq7000 ARM Dual Cortex-A9移植；
 
 ### 组件 ###
 * DFS: 新增根据设备对象获得其上装载文件系统路径的函数：dfs_filesystem_get_mounted_path(struct rt_device* device);
