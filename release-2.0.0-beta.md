@@ -12,8 +12,7 @@ RT-Thread 2.0.0 beta
 * 在执行soft timer超时函数时，打开调度器锁；
 * 新增块设备的自动刷新参数，RT_DEVICE_CTRL_BLK_AUTOREFRESH；
 
-### 工具 ### 
-
+### 工具 ###
 * 修正scons命令编译时，选择keil mdk (armcc)编译器时，命令行太长编译失败的问题；
 
 ### 移植 ###
