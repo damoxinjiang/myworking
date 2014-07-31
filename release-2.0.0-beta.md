@@ -30,13 +30,15 @@ RT-Thread 2.0.0 beta
 * 重写xplorer4330（NXP LPC4330芯片）移植（xiaonong完成）；
 * 新增Zynq7000 ARM Dual Cortex-A9移植；
 * 新增MB9BF618S移植；
-* 新增tm4c129x移植；
+* 新增tm4c129x移植，并加入相应的EMAC以太网驱动；
 
 ### 组件 ###
 * DFS: 新增根据设备对象获得其上装载文件系统路径的函数：dfs_filesystem_get_mounted_path(struct rt_device* device);
+* DFS: 修正readdir在GNU GCC下的编译警告；
 * DeviceDrivers：新增workqueue实现；
 * DeviceDrivers: 修正USB Device栈中的一些拼写错误；
 * DeviceDrivers: 重写serial框架，能够让串口设备驱动同时支持三种模式：poll、interrupt、DMA。模式选择需要在执行rt_device_open时，由open flags指定；
+* DeviceDrivers: 加入更多的SPI设备驱动，例如RW009的SPI WiFi网口驱动（2.4G 802.11 b/g/n，WEP/WPA/WPA2，SoftAP/Station），SPI NorFlash块设备驱动，ENC28J60以太网网卡驱动；
 * Finsh: list_device()命令中增加refcount的信息；
 * Finsh: 修正'0'零常量无法识别的错误；
 * Finsh: mv命令，实现把一个文件移动到一个目录中；
@@ -44,6 +46,7 @@ RT-Thread 2.0.0 beta
 * Finsh: 新增netstat命令，用于显示当前系统中TCP连接的状态；
 * Finsh: 修正当命令行太长导致的缓冲区移除的问题；
 * libc: 修正arm libc中未使用DFS时的编译警告；
+* libc: 修正newlib中使用DFS时的系统调用编译警告（GNU GCC下）；
 * lwIP 1.4.1: 默认打开LWIP_SO_SNDTIMEO以支持连接发送超时；
 * lwIP 1.4.1: 修正MEMP_NUM_TCP_SEG定义错误的问题；
 * lwIP 1.4.1: 加入RT_LWIP_REASSEMBLY_FRAG选项定义以支持IP分组及合并；
